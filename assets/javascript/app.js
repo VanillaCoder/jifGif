@@ -48,6 +48,8 @@ $(document).on("click", ".gifButtons", function () {
             for (let i = 0; i < results.length; i++) {
                 var gif = $("<img>")
                 gif.addClass("gif")
+                gif.attr("gif-pause", results[i].images.fixed_height_still.url)
+                gif.attr("gif-play", results[i].images.fixed_height.url)
                 gif.attr("src", results[i].images.fixed_height_still.url)
                 $("#gifDiv").append(gif)
             }
@@ -57,3 +59,15 @@ $(document).on("click", ".gifButtons", function () {
 
 })
 
+$(document).on("click", ".gif", function () {
+
+    var gifPlay = $(this).attr("gif-play")
+    var gifPause = $(this).attr("gif-pause")
+    if ($(this).attr("src") === gifPause) {
+        $(this).attr("src", gifPlay)
+    }
+    else {
+        $(this).attr("src", gifPause)
+
+    }
+})
