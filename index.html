@@ -14,31 +14,43 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- local javascript link -->
-    <script type="text/javascript" src="assets/javascript/app.js"></script>
 
 
     <title>Jif Search</title>
 </head>
 
 <body>
-        <!-- create a search bar -->
+    <!-- create a search bar -->
 
-
-    <!-- display buttons -->
     <div class="container">
         <div class="row">
-            <div id="btnHangout"></div>
+            <div class="col-md-4">
+                    <!-- Search bar -->
+                    <div class="form-group">
+                        <label>Gif Search:</label>
+                        <input class="form-control form-control-sm" id="gifSearch" placeholder="Enter Search">
+                        <small class="form-text text-muted">Be creative!</small>
+                    </div>
+                    <!-- submit button -->
+                    <!-- Gid buttons are appended here -->
+
+                <div id="btnHangout"></div>
+                <button id="searchBtn">Search</button>
+
+            </div>
+            <!-- api dumps gifs here -->
+            <div class="col-md-8">
+                <div id="gifDiv"></div>
+            </div>
         </div>
     </div>
-    <!-- create a submit button -->
-    <!-- a div to append gifs -->
 
     <!-- **bonus** a "more" button at the bottom that will display more results -->
     <!-- **bonus** make it look pretty and shit -->
 
 
 
-
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
 
 </html>
