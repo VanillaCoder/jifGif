@@ -1,3 +1,23 @@
-.btn-info{
+.btn-dark{
     margin: 4px 2px;
+}
+.gif{
+    margin: 5px 5px;
+}
+body{
+    background-image: url("../images/background3.jpg");
+    color: white;
+} 
+#gifSearch{
+    color: white;
+    background-color: gray;
+} 
+
+ #leftCol{
+    margin-left: 45px;
+    margin-top: 45px;
+}
+
+#searchBtn{
+    margin-bottom: 15px;
 }

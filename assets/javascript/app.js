@@ -13,8 +13,7 @@ function buttonLoad() {
     for (let i = 0; i < buttonArray.length; i++) {
         console.log(buttonArray[i])
         var gifButton = $("<button>")
-        gifButton.addClass("gifButtons btn btn-info")
-
+        gifButton.addClass("gifButtons btn btn-dark")
         gifButton.attr("data-name", buttonArray[i])
         gifButton.text(buttonArray[i])
         $("#btnHangout").append(gifButton)
