@@ -21,3 +21,7 @@ body{
 #searchBtn{
     margin-bottom: 15px;
 }
+#gifSearch:hover{
+    background-color: blanchedalmond;
+    color: black;
+}
