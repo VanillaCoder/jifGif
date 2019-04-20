@@ -34,7 +34,7 @@ $(document).on("click", ".gifButtons", function () {
     console.log("working here")
     var gifName = $(this).attr("data-name")
     console.log(gifName)
-    var queryURL = "http://api.giphy.com/v1/gifs/search?api_key=zzluTfZGQ8bBJajVD4ZGmDiZljA9XMoO&q=" + gifName + "&limit=10&offset=0&&lang=en"
+    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=zzluTfZGQ8bBJajVD4ZGmDiZljA9XMoO&q=" + gifName + "&limit=10&offset=0&&lang=en"
 
     $("#gifDiv").empty()
     $.ajax({
